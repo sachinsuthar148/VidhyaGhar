@@ -31,6 +31,7 @@ export default function Login() {
                 <br />
           <button onClick='/'>Log in</button>
           <br />
+         
         <center><a href="/">forgot password</a></center>
         
         </form>
