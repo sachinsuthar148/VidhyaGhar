@@ -3,10 +3,10 @@ import "./Login.css";
 
 import image from "./teacher student logo.png";
 
-export default function Login() {
+export default function Login(props) {
   return (
     <div className="body">
-      <h1>Student Log in</h1>
+    <h1>{props.title}</h1>
       <div className="login-box">
         <div>
           <img src={image} alt="" />
@@ -26,11 +26,13 @@ export default function Login() {
             id=""
             placeholder="password"
           />
+          <br />
+          <br />
           <input type="checkbox" name="show-password" id="" />
           <label htmlFor="show-password">show password</label>
                 <br />
           <button onClick='/'>Log in</button>
-          <br />
+   
          
         <center><a href="/">forgot password</a></center>
         
