@@ -7,8 +7,6 @@ import school3 from "./images/school3.jpg";
 import school4 from "./images/school4.jpg";
 import school5 from "./images/school5.jpg";
 import school6 from "./images/school6.jpg";
-
-
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
@@ -78,7 +76,7 @@ export default function App() {
                       className="d-block w-100"
                       src={school2}
                       height="400px"
-                      alt="Image One"
+                      alt="school"
                     />
                   </Carousel.Item>
                   <Carousel.Item interval={1500}>
@@ -86,7 +84,7 @@ export default function App() {
                       className="d-block w-100"
                       src={school3}
                       height="400px"
-                      alt="Image Two"
+                      alt="school"
                     />
                   </Carousel.Item>
                   <Carousel.Item interval={1500}>
@@ -95,7 +93,7 @@ export default function App() {
                       src={school4}
                       height="400px"
                       id="school1"
-                      alt="Image thrid"
+                      alt="school"
                     />
                   </Carousel.Item>
                   <Carousel.Item interval={1500}>
@@ -104,7 +102,7 @@ export default function App() {
                       src={school5}
                       height="400px"
                       id="school1"
-                      alt="Image four"
+                      alt="school"
                     />
                   </Carousel.Item>
                   <Carousel.Item interval={1500}>
@@ -113,7 +111,7 @@ export default function App() {
                       src={school6}
                       height="400px"
                       id="school1"
-                      alt="Image six"
+                      alt="school"
                     />
                   </Carousel.Item>
                 </Carousel>

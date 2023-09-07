@@ -15,7 +15,7 @@ export default function Nav() {
     <div className='home'>
         <div className='nav'>
           <div className='col1'>
-            <img src={logo} width="90px" height="90px" />
+            <img src={logo} width="90px" height="90px"  alt='logo'/>
             <h1>VidhyaGhar</h1>
           </div>
           <div className='col2'>
