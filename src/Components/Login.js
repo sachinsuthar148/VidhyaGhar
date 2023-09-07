@@ -16,14 +16,14 @@ export default function Login(props) {
           <input
             type="email"
             name="student-email"
-            id="email"
+            id="input-field"
             placeholder="Your email"
           />
           <br />
           <input
             type="password"
             name="student-password"
-            id=""
+            id="input-field"
             placeholder="password"
           />
           <br />

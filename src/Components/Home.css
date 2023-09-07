@@ -93,18 +93,20 @@
    border: 2px solid transparent;
    border-radius: 10px;
    font-size: 25px;
-   color: black;
+   color: rgb(249, 236, 236);
    background-image: url('https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg?cs=srgb&dl=pexels-olia-danilevich-5088008.jpg&fm=jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
  
-    
+    text-shadow: 3px 3px rgb(22, 17, 17);
 
   }
   .head h1{
     color:black;
+    font-size: 90px;
+    text-shadow: 3px 3px white;
   }
   .home .about{
     margin: 0px;

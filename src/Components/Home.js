@@ -1,12 +1,7 @@
 import React from "react";
 import "./Home.css";
 import logo from "./images/logo.png";
-import phonelogo from "./images/phn.png";
-import maillogo from "./images/mail.png";
-import iglogo from "./images/ig.png";
-import twitterlogo from "./images/twitter.png";
-import telegramlogo from "./images/telegram.png";
-import school1 from "./images/school1.jpg";
+
 import school2 from "./images/school2.jpg";
 import school3 from "./images/school3.jpg";
 import school4 from "./images/school4.jpg";
@@ -15,85 +10,17 @@ import school6 from "./images/school6.jpg";
 
 
 import "bootstrap/dist/css/bootstrap.css";
-import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 export default function App() {
   return (
     <>
       {" "}
       <div className="home">
-        <div className="nav">
-          <div className="col1">
-            <img src={logo} width="90px" height="90px" />
-            <h1>VidhyaGhar</h1>
-          </div>
-          <div className="col2">
-            <br />
-            <br />
-            <br />
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Login
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu id="menu">
-                <Dropdown.Item id="item">
-                  {" "}
-                  <Link to="/admin" id="link">
-                    Admin
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item id="item">
-                  <Link to="/teacher" id="link">
-                    {" "}
-                    Teacher
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item id="item">
-                  <Link to="/student" id="link">
-                    {" "}
-                    Student
-                  </Link>
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <hr />
-            <br />
-            <a href="tel:+91-76343658367">
-              <img src={phonelogo} width="25px" height="25px" /> +91-76343658367
-            </a>
-          </div>
-        </div>
-        <div className="content">
-          <ul>
-            <li>
-              <Link to="/" id="link">
-                {" "}
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/courses" id="link">
-                Our Courses
-              </Link>
-            </li>
-
-            <li>
-              {" "}
-              <Link to="/services" id="link">
-                Services
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link to="/contact" id="link">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Nav/>
         <center>
           <div className="head">
             <br />
@@ -195,50 +122,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="footer">
-          <br />
-          <div className="logo">
-            <img src={logo} width="120px" height="120px" />
-          </div>
-
-          <div className="logo">
-            <h1>Vidhya Ghar</h1>
-            <div className="media">
-              <a href="#">
-                <img src={iglogo} width="25px" height="25px" />
-              </a>
-
-              <a href="#">
-                <img src={twitterlogo} width="25px" height="25px" />
-              </a>
-
-              <a href="#">
-                <img src={telegramlogo} width="25px" height="25px" />
-              </a>
-            </div>
-          </div>
-          <div className="logo">
-            <h3>Contact Us:</h3>
-            <a href="tel:+91-76343658367">
-              <img src={phonelogo} width="25px" height="25px" /> +91-76343658367
-            </a>
-            <br />
-            <a href="mailto:vidhyagharschool@gmail.com">
-              <img src={maillogo} width="25px" height="25px" /> vidhya@gmail.com
-            </a>{" "}
-            <br />
-          </div>
-          <div className="logo">
-            <h3>Address:</h3>
-            <p>
-              Plot-246, Janta Colony <br /> Jaipur, Rajasthan{" "}
-            </p>
-          </div>
-          <div className="logo"></div>
-        </div>
-        <div className="foot">
-          <p>Copyright@allrightsreserved2023</p>
-        </div>
+              <Footer/>
       </div>
     </>
   );
