@@ -42,7 +42,7 @@ backdrop-filter: blur(140px);
     outline: none;
     border-bottom: 2px solid black;
     border-radius:6px;
-} */
+} 
 
 input::placeholder
 {
