@@ -12,10 +12,35 @@ import Services from './Services';
 import Courses from './Courses';
 
 
+// following portion for admin components 
+import Admin_dashboard from './Admin Component/Admin_dashboard';
+import Admin_SignUp from './Admin Component/Admin_SignUp'
+import Teacher_SignUp from './Admin Component/Teacher_SignUp'
+import Student_SignUp from './Admin Component/Student_SignUp';
+import Manage_attendence from './Admin Component/Manage_attendence'
+import Manage_result from './Admin Component/Manage_result'
+import Notice from './Admin Component/Notice'
+
+// following portion for student components 
+import Student_dashboard from './Student Components/Student_dashboard';
+import Student_attendence from './Student Components/Student_attendence';
+import Student_complaint from './Student Components/Student_complaint';
+import Student_notification from './Student Components/Student_notification';
+import Student_result from './Student Components/Student_result';
+
+// following portion for Teacher components 
+import Teacher_attendence from './Teacher Components/Teacher_attendence';
+import Teacher_complaint from './Teacher Components/Teacher_complaint';
+import Teacher_result from './Teacher Components/Teacher_result';
+import Teacher_dashboard from './Teacher Components/Teacher_dashboard';
+import Teacher_notification from './Teacher Components/Teacher_notification'
+
+
 export default function Header() {
   return (
     <BrowserRouter>
    <Routes>
+
 
    <Route path='/' element={<Home/>}>  </Route>
    <Route path='/contact' element={<Contact />}>  </Route>
@@ -26,6 +51,34 @@ export default function Header() {
    <Route path='/teacher' element={<Teacher_login />}></Route>
    <Route path='/services' element={<Services />}></Route>
    <Route path='/courses' element={<Courses />}></Route>
+   <Route path='/admin/AdminDashboard' element={<Admin_dashboard/>}></Route>
+   <Route path='/admin/AdminDashboard/AdminSignUp' element={<Admin_SignUp/>}></Route>
+   <Route path='/admin/AdminDashboard/TeacherSignUp' element={<Teacher_SignUp/>}></Route>
+   <Route path='/admin/AdminDashboard/StudentSignUp' element={<Student_SignUp/>}></Route>
+   <Route path='/admin/AdminDashboard/attendence' element={<Manage_attendence/>}></Route>
+   <Route path='/admin/AdminDashboard/result' element={<Manage_result/>}></Route>
+   <Route path='/admin/AdminDashboard/notice' element={<Notice/>}></Route>
+
+
+
+   <Route path='/student/StudentDashboard' element={<Student_dashboard/>}></Route>
+   <Route path='/student/StudentDashboard/attendence' element={<Student_attendence/>}></Route>
+   <Route path='/student/StudentDashboard/result' element={<Student_result/>}></Route>
+   <Route path='/student/StudentDashboard/notification' element={<Student_notification/>}></Route>
+   <Route path='/student/StudentDashboard/complaint' element={<Student_complaint/>}></Route>
+
+
+
+
+   <Route path='/teacher/TeacherDashboard' element={<Teacher_dashboard/>}></Route>
+   <Route path='/teacher/TeacherDashboard/attendence' element={<Teacher_attendence/>}></Route>
+   <Route path='/teacher/TeacherDashboard/complaint' element={<Teacher_complaint/>}></Route>
+   <Route path='/teacher/TeacherDashboard/notification' element={<Teacher_notification/>}></Route>
+   <Route path='/teacher/TeacherDashboard/result' element={<Teacher_result/>}></Route>
+
+
+
+  
 
   
 </Routes>

@@ -45,6 +45,7 @@
   }
   #item:hover{
     opacity: 0.4;
+    
     text-decoration: underline 3px solid azure;
   
   }
@@ -95,19 +96,19 @@
    border-radius: 10px;
    font-size: 25px;
    color: rgb(249, 236, 236);
-   background-image: url('https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg?cs=srgb&dl=pexels-olia-danilevich-5088008.jpg&fm=jpg');
+   background-image: url('./images/backg.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
  
-    text-shadow: 3px 3px rgb(22, 17, 17);
+    text-shadow: 3px 3px rgb(22, 17, 17); 
 
   }
   .head h1{
-    color:black;
+    color:white;
     font-size: 90px;
-    text-shadow: 3px 3px white;
+    text-shadow: 3px 3px rgb(53, 48, 48);
   }
   .home .about{
     margin: 0px;

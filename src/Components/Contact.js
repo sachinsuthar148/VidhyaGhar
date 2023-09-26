@@ -10,8 +10,7 @@ export default function Contact() {
 <Nav/>
 
   <div className='home'>
-      <div className='content'>
-      </div>
+    
       <center>
         <div className='head'>
           <br /><br />

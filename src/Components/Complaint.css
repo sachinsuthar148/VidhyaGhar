@@ -1,0 +1,16 @@
+ textarea
+{
+
+    width: 80%;
+    background: #dac9aa70;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+}
+textarea::placeholder
+{
+    color: white;
+    text-align: center;
+}
